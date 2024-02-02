@@ -178,7 +178,30 @@ a {
 
 /* Images */
 .images {
+  /* border: 1px solid #000; */
   margin: 2rem 3rem;
+}
+
+#gallery {
+  /* border: 1px solid #000; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#gallery div {
+  /* border: 1px solid #000; */
+  width: 30%;
+  overflow: hidden;
+}
+
+#gallery div img {
+  /* border: 1px solid #000; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Media queries */
