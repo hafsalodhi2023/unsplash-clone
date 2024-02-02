@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"
+      integrity="sha256-ZKOGvp7YVwX26g2d0ooDvbSBQSEiIi4Bd9FuK+12Zk0="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Unsplash Clone</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="left">
+          <div class="logo">
+            <a href="index.html">
+              <h1>Unsplash</h1>
+              <p>Photos for everyone</p>
+            </a>
+          </div>
+          <div class="nav-search-form">
+            <form>
+              <input
+                type="text"
+                placeholder="Search free high-resolution photos"
+              />
+            </form>
+          </div>
+        </div>
+        <ul class="nav">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Join free</a></li>
+        </ul>
+      </nav>
+
+      <div class="category-nav">
+        <div class="category">
+          <a href="index.html">Editorial</a>
+        </div>
+        <div class="category">
+          <a href="#" class="active">Wallpapers</a>
+        </div>
+        <div class="category">
+          <a href="#">Texture & Patterns</a>
+        </div>
+        <div class="category">
+          <a href="#">Nature</a>
+        </div>
+        <div class="category">
+          <a href="#">Current Events</a>
+        </div>
+        <div class="category">
+          <a href="#">Architecture</a>
+        </div>
+        <div class="category">
+          <a href="#">Business & Work</a>
+        </div>
+        <div class="category">
+          <a href="#">Film</a>
+        </div>
+        <div class="category">
+          <a href="#">Animals</a>
+        </div>
+        <div class="category">
+          <a href="#">Travel</a>
+        </div>
+        <div class="category">
+          <a href="#">Fashion</a>
+        </div>
+        <div class="category">
+          <a href="#">Food & Drink</a>
+        </div>
+        <div class="category">
+          <a href="#">Spirituality</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Unsplash</h1>
+          <p>
+            The internet’s source of freely useable images.<br />
+            Powered by creators everywhere.
+          </p>
+          <div class="hero-search-form">
+            <form>
+              <input
+                type="text"
+                placeholder="Search free high-resolution photos"
+              />
+            </form>
+          </div>
+          <div class="trending-search-tags">
+            <p>
+              Trending searches: <a href="#">flower</a>,
+              <a href="#">wallpaper</a>, <a href="#">sad</a>,
+              <a href="#">love</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+    </section>
+
+    <section class="images">
+      <div id="gallery">
+        <a href="images/1.jpg">
+          <img src="images/1.jpg" />
+        </a>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js"
+      integrity="sha256-bIPvSCQ7+G5GbIXDt2B+9AMpCmFtxTVLU+aWAIPzL8I="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#gallery").justifiedGallery({
+        rowHeight: 250,
+        lastRow: "nojustify",
+        margins: 18,
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
